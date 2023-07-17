@@ -11,7 +11,7 @@ class User_Tyoe(models.Models):
 
     def save(self, *args, **kwargs):
         self.clean()
-        return super(User, self).save(*args, **kwargs)
+        return super(User_Type, self).save(*args, **kwargs)
 
     def __str__(self):
         return "%s %s %s" % (self.user_type_id, self.user_type_name, self.type_status)
