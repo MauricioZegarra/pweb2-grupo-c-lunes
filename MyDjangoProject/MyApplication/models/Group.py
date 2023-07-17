@@ -10,6 +10,7 @@ class Group(models.Model):
     group_modified = models.DateTimeField()
     group_name = models.CharField(max_length=255)
     group_status = models.BooleanField()
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         ordering = ['group_id', 'group_created', 'group_modified']
